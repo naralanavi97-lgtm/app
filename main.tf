@@ -137,7 +137,7 @@ const app = express();
 app.use(cors());
 
 const db = mysql.createConnection({
-  host: "${google_sql_database_instance.mysql_instance.private_ip_address}",
+  host: "${google_sql_databaese_instance.mysql_instance.private_ip_address}",
   user: "musicuser",
   password: "Music@123",
   database: "musicdb"
@@ -175,6 +175,10 @@ resource "google_storage_bucket" "music_bucket" {
   name     = "${var.project_id}-music-bucket"
   location = var.region
   uniform_bucket_level_access = true
+<<<<<<< HEAD
 }
 
  
+=======
+}
+>>>>>>> bbda465 (added)

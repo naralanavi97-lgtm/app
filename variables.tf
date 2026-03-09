@@ -12,7 +12,3 @@ variable "zone" {
   description = "GCP Zone"
   default     = "asia-south1-a"
 }
-variable "gcp_credentials" {
-  description = "gcp credentials"
-  type        = string
-}
